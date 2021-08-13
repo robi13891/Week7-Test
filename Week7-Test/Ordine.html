@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nuovo Ordine</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="Style.css" />
+    <script src="Functions.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="raw">
+            <p class="header"><h1><i><b>Libraccio</b></i></h1></p>
+        </div>
+
+        <div class="raw">&nbsp;</div>
+        <!--navbar-->
+        <div class="row">
+            <div class="col-12">
+                <div class="container">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Ordine.html">Nuovo Ordine</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="NewsLetter.html">NewsLetter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="About.html">Informazioni</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--end_navbar-->
+
+        <div class="raw">&nbsp;</div>
+
+        <!--main-->
+        <div class="raw">
+            <div class="col-12">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <td>Titolo</td>
+                            <td>Autore</td>
+                            <td>Genere</td>
+                            <td>Anno Uscita</td>
+                            <td>Editore</td>
+                            <td>Prezzo</td>
+                            <td>Seleziona</td>
+                            <td>Quantità</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lolita</td>
+                            <td>V. Nabokov</td>
+                            <td>Romanzo</td>
+                            <td>1930</td>
+                            <td>Mondadori</td>
+                            <td>11</td>
+                            <td>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="11" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <form>
+                                    <input type="text" style="width: 50px;" id="quantita" value="">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Kafka sulla spiaggia</td>
+                            <td>H. Murakami</td>
+                            <td>Romanzo</td>
+                            <td>2018</td>
+                            <td>Einaudi</td>
+                            <td>12</td>
+                            <td>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="12" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <form>
+                                    <input type="text" style="width: 50px;" id="quantita" value="">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Faust</td>
+                            <td>J.W. Goethe</td>
+                            <td>Romanzo</td>
+                            <td>1912</td>
+                            <td>Giunti</td>
+                            <td>8</td>
+                            <td>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="8" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <form>
+                                    <input type="text" style="width: 50px;" id="quantita" value="">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Compagno di sbronze</td>
+                            <td>C. Bukowski</td>
+                            <td>Romanzo</td>
+                            <td>1950</td>
+                            <td>Mondadori</td>
+                            <td>14</td>
+                            <td>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="14" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <form>
+                                    <input type="text" style="width: 50px;" id="quantita" value="">
+                                </form>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="row">
+                    <div class="col-4"><button type="submit" class="btn btn-primary" onclick="Ordina()">Ordina!</button></div>
+                    <div class="col-8"></div>
+                </div>
+                <div class="row"> <div class="col-12">&nbsp;</div></div>
+                <div class="row">
+                    <div class="col-6"><b>Totale ordine</b></div>
+                    <div class="col-6">
+                        <span class="totaleOrdine" id="totaleOrdine"></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--end_main-->
+
+        <div class="raw">&nbsp;</div>
+
+        <!--footer-->
+        <div class="raw">
+            <p class="footer">&copy;2021 Libraccio Srl</p>
+        </div>
+        <!--end_footer-->
+
+        <div class="raw">&nbsp;</div>
+    </div>
+
+
+
+</body>
+</html>

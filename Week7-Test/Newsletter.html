@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Newsletter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="Style.css" />
+    <script src="Functions.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="raw">
+            <p class="header"><h1><i><b>Libraccio</b></i></h1></p>
+        </div>
+
+        <div class="raw">&nbsp;</div>
+        <!--navbar-->
+        <div class="row">
+            <div class="col-12">
+                <div class="container">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Ordine.html">Nuovo Ordine</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="NewsLetter.html">NewsLetter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="About.html">Informazioni</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--end_navbar-->
+
+        <div class="raw">&nbsp;</div>
+
+        <!--main-->
+        <div class="raw">
+            <div class="col-12">
+                <form>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-4"><img src="https://picsum.photos/200/400?grayscale" class="rounded mx-auto d-block" alt="..."></div>
+                            <div class="col-8">
+                                <div class="input-group flex-nowrap">
+                                    <span class="input-group-text" id="addon-wrapping">Nome</span>
+                                    <input type="text" class="form-control" placeholder="Mario" aria-label="Username" aria-describedby="addon-wrapping">
+                                </div>
+                                <div class="raw">&nbsp;</div>
+                                <div class="input-group flex-nowrap">
+                                    <span class="input-group-text" id="addon-wrapping">Cognome</span>
+                                    <input type="text" class="form-control" placeholder="Rossi" aria-label="Username" aria-describedby="addon-wrapping">
+                                </div>
+                                <div class="raw">&nbsp;</div>
+                                <div class="input-group flex-nowrap">
+                                    <span class="input-group-text" id="addon-wrapping">E-mail</span>
+                                    <input type="text" class="form-control" placeholder="mario.rossi@gmail.com" aria-label="Username" aria-describedby="addon-wrapping">
+                                </div>
+                                <div class="raw">&nbsp;</div>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Scegli Frequenza</option>
+                                    <option value="1">Giornaliera</option>
+                                    <option value="2">Settimanale</option>
+                                    <option value="3">Mensile</option>
+                                </select>
+                                <div class="raw">&nbsp;</div>
+                                <button type="submit" class="btn btn-primary" onclick="Iscrivimi()">Iscrivimi!</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <!--end_main-->
+
+        <div class="raw">&nbsp;</div>
+        <!--footer-->
+        <div class="raw">
+            <p class="footer">&copy;2021 Libraccio Srl</p>
+        </div>
+        <!--end_footer-->
+
+        <div class="raw">&nbsp;</div>
+    </div>
+
+
+
+</body>
+</html>
